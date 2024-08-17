@@ -9,7 +9,7 @@
 #                                             |___/                         -  By CJ
 #
 # YouTube : www.youtube.com/@LearningWithCJ
-# GitHub  : www.github.com/Carl-Johnson1976
+# GitHub  : www.github.com/LearningWithCJ
 # Telegram: t.me/LearningWithCJ
 #
 
