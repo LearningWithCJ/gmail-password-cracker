@@ -20,7 +20,7 @@ import time
 
 
 target_gmail = "" # victim gmail
-passlist_file = "" # password list file path (.txt)
+passlist_file = fr"" # password list file path (.txt)
 
 
 class Crack():
